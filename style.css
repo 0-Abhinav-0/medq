@@ -1,0 +1,145 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+body {
+   background-image: url(pexels-jplenio-1103970.jpg);
+   min-height: 100vh;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+.wrapper {
+   
+    height: 20vh;
+    display: grid;
+    place-items: center;
+}
+.typing-demo {
+    width: 16ch;
+    animation: typing 2s, blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    font-weight: bold;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 3em;
+}
+.text {
+    font-size: 30px;
+    background-color: white;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center; /* Ensures the text is centered */
+    word-wrap: break-word; /* Prevents the text from overflowing */
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+.typing-demo span {
+    color: darkblue;
+}
+
+.img_cont {
+    text-align: center;
+    
+}
+
+/* General Section Styling */
+.info {
+    padding: 50px 0;
+    
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Box Styling (for both Location and Contact Us) */
+.box {
+    background-color: #e6e6e6;
+    color: rgb(255, 191, 0);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 48%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Pop-out Animation */
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styling */
+.box h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: rgb(255, 95, 31);
+}
+
+/* Paragraph Styling */
+.box p {
+    font-size: 25px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Link Styling */
+.box a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.box a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .typing-demo {
+        font-size: 2em; /* Adjust font size for mobile */
+    }
+    .text {
+        font-size: 20px; /* Make text smaller for mobile */
+        width: 90%; /* Ensure the quote doesn't overflow */
+    }
+    .wrapper {
+        height: auto;
+        padding: 20px 0;
+    }
+}
+.txt{
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
