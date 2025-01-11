@@ -19,7 +19,7 @@ body {
     place-items: center;
 }
 .typing-demo {
-    width: 16ch;
+    width: 18.5ch;
     animation: typing 2s, blink .5s step-end infinite alternate;
     white-space: nowrap;
     font-weight: bold;
@@ -50,8 +50,16 @@ body {
         border-color: transparent
     }
 }
+.text span{
+    color: green;
+    font-weight: bold;
+}
+.text{
+    text-decoration: none;
+    
+}
 .typing-demo span {
-    color: darkblue;
+    color: green;
 }
 
 .img_cont {
@@ -82,7 +90,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 48%;
+    width: 50%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
