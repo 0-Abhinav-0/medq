@@ -133,7 +133,10 @@ body {
     .box {
         width: 80%;
         margin-bottom: 20px;
+        overflow: scroll;
+        
     }
+   
     .typing-demo {
         font-size: 2em; /* Adjust font size for mobile */
     }
